@@ -134,7 +134,7 @@ addEventListener("DOMContentLoaded", () => {
         Swal.fire({
           title: `${data.title}`,
           text: `${data.description}`,
-          imageUrl: "assets/images/alert-image.jpg",
+          imageUrl: "alert-image.jpg",
           imageWidth: 400,
           imageHeight: 200,
           imageAlt: "Custom image",
@@ -143,7 +143,7 @@ addEventListener("DOMContentLoaded", () => {
         Swal.fire({
           title: `${data.title}`,
           text: "Oops! Sorry, there is no description available for this book.",
-          imageUrl: "assets/images/glasses-alert-image.jpg",
+          imageUrl: "glasses-alert-image.jpg",
           imageWidth: 400,
           imageHeight: 200,
           imageAlt: "Custom image",
