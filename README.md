@@ -14,7 +14,7 @@
 
 ReadNavigator is a web application that allows you to explore books based on genres using the Open Library API. It provides a user-friendly interface to search for books, view details, and navigate through paginated results.
 
-![screenshot](assets/images/screenshot.png)
+![screenshot](src/assets/images/screenshot.png)
 
 **Live Demo**: [ReadNavigator](https://readnavigator.netlify.app/)
 
