@@ -1,0 +1,98 @@
+body {
+  background-color: #E1DCC5;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  margin: 0;
+}
+
+body, html {
+  height: 100%; 
+}
+
+.bg-custom-brown {
+  background-color: #d2b48c;
+}
+
+.search-navbar {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.input-group {
+  margin: 10px;
+}
+
+.btn-style {
+  border: none;
+  background-color: #d2b48c !important;
+}
+
+.search-icon {
+  width: 1.5em;
+}
+
+.btn-icon-center .search-icon {
+  margin-top: -0.1em;
+}
+
+.search-navbar .input-group {
+  display: flex;
+  align-items: center;
+}
+
+ .search-container {
+  padding-top: 280px !important;
+  padding-bottom: 80px;
+}
+
+ .result-item{
+  border: solid 10px #d2b48c;
+  width: 250px;
+  position: relative;
+}
+
+.description-button {
+  position: absolute;
+  bottom: 10px;
+  width: 180px;
+  text-align: center;
+
+  border: solid 1px #d2b48c;
+}
+
+.description-button:hover, .pagination-btn:hover {
+  color:  #d2b48c;
+}
+
+.book-result, .pagination {
+  margin-bottom: 80px; 
+}
+
+#loadingMessage {
+  display: none;
+  color: #ca9959;
+  font-style: bold;
+}
+
+.pagination-btn {
+  background-color: white;
+  border: solid 3px #d2b48c;
+}
+
+#totalPages {
+  margin-left: 3px;
+  margin-right: 10px;
+}
+
+.pagination {
+  display: none;
+}
+
+.count-page {
+  font-size: 18px;
+  color: #ca9959;
+}
+
+
+
+
