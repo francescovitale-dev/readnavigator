@@ -134,19 +134,11 @@ addEventListener("DOMContentLoaded", () => {
         Swal.fire({
           title: `${data.title}`,
           text: `${data.description}`,
-          imageUrl: "alert-image.jpg",
-          imageWidth: 400,
-          imageHeight: 200,
-          imageAlt: "Custom image",
         });
       } else {
         Swal.fire({
           title: `${data.title}`,
           text: "Oops! Sorry, there is no description available for this book.",
-          imageUrl: "glasses-alert-image.jpg",
-          imageWidth: 400,
-          imageHeight: 200,
-          imageAlt: "Custom image",
         });
       }
     } catch (error) {
