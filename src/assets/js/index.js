@@ -2,12 +2,12 @@ addEventListener("DOMContentLoaded", () => {
   // Initialize current page and items per page
   let currentPage = 1;
   const itemsPerPage = 9;
-
+  
   // Function to handle the search by genre
   async function searchByGenre(event) {
     // Prevent the default form submission
     event.preventDefault();
-    const genre = document.getElementById("genreInput").value.toLowerCase();
+    const genre = _.toLower(document.getElementById("genreInput").value);
 
     // Display loading message
     const loadingMessage = document.getElementById("loadingMessage");
@@ -47,9 +47,7 @@ addEventListener("DOMContentLoaded", () => {
         loadingMessage.style.display = "none";
 
         // Generate HTML for displaying search results
-        const htmlString = data.works
-          .map(
-            (work, index) => `
+        const htmlString = _.map(data.works, (work, index) => `
                 <div class="result-item card mb-3 col-sm-12 col-md-6 col-lg-4 col-xl-4 mx-auto">
                     <div class="card-body">
                         <h3 class="card-title text-dark">${work.title}</h3>
@@ -137,6 +135,7 @@ addEventListener("DOMContentLoaded", () => {
         });
       } else {
         Swal.fire({
+          icon: "info",
           title: `${data.title}`,
           text: "Oops! Sorry, there is no description available for this book.",
         });
@@ -150,10 +149,3 @@ addEventListener("DOMContentLoaded", () => {
   const searchButton = document.querySelector(".js-btn");
   searchButton.addEventListener("click", searchByGenre);
 });
-
-/* Per il Coach:
-Mi è stato suggerito di rivedere gli "eventListener", sottolineando la necessità di implementare un approccio di "event delegation" con un unico listener centrale. Sono consapevole dell'importanza di questa modifica, ma ammetto di non avere una comprensione completa di come implementare al meglio questa soluzione.
-Dunque, vorrei approfittare dell'occasione per chiedere se potesse fornirmi ulteriori indicazioni o risorse specifiche che potrebbero aiutarmi a sviluppare una soluzione efficace in questo contesto.
-
-Grazie anticipatamente
-*/
