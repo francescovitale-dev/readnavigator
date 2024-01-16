@@ -1,0 +1,44 @@
+.footer {
+  background-color: #d2b48c;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.footerTrademark {
+  margin-left: 15px;
+  text-decoration: none !important;
+  font-family: 'Sometype Mono', monospace;
+  color: white;
+}
+
+.footerTrademark:hover {
+  font-family: 'Sometype Mono', monospace;
+  color: black;
+}
+
+.footer-picture-instagram {
+  width: 28px;
+  margin-right: 13px;
+}
+
+.footer-picture-git {
+  width: 36px;
+  margin-right: 13px;
+}
+
+.footer-picture-linkedin {
+  width: 30px;
+  margin-right: 13px;
+}
+
+.linkedin-footer, .instagram-footer {
+  text-decoration: none !important;
+}
+
+
+
+
+
+
+
+

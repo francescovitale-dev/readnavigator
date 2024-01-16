@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ReadNavigator">
+    <meta property="og:description" content="Discover and explore books based on your favorite genres with ReadNavigator. A web application designed for book enthusiasts.">
+    <meta property="og:image" content="https://github.com/francescovitale-dev/readnavigator/blob/main/assets/images/sfondo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ReadNavigator Book Image">
+    <meta property="og:url" content="https://readnavigator.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ReadNavigator" />
+
+    <meta name="keywords" content="book, literature, reading, genre, search, discovery, web application">
+    <meta name="author" content="Francesco Vitale">
+
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+
+    <script type="module" src="assets/js/main.js"></script>
+
+    <title>ReadNavigator</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-custom-brown">
+        <span class="navbar-brand mb-0 mx-auto text-light h1">ReadNavigator</span>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center align-items-center search-container">
+            <nav class="navbar navbar-light search-navbar">
+              <form class="input-group">
+                <input  id="genreInput" class="form-control form-control-lg mr-sm-2 input-style"  type="search" placeholder="Enter Genre" aria-label="Search">
+                <button class="btn btn-lg my-2 my-sm-0 btn-style js-btn" type="submit"><img class="search-icon" src="assets/images/search-icon.svg" alt="search"></button>
+              </form>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div id="loadingMessage" class="text-center mt-3">Searching... Please wait.</div>
+
+      <div class="container mt-1">
+        <div class="row">
+          <div>
+            <div id="js-subject-result" class="w-100 book-result">
+              <!-- Books display here -->
+            </div>      
+          </div>
+        </div>
+      </div>      
+      
+    </header>
+
+    <footer>
+      <div class="footer fixed-bottom">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
+                <div>
+                    <a class="footerTrademark" href="https://www.vitalefrancesco.com/" target="_blank">© Vitale Francesco</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex justify-content-md-end justify-content-center">
+            <nav class="footerLogos">
+                <a class="instagram-footer" href="https://www.instagram.com/vitale_francesco_/" target="_blank" rel="noopener noreferrer">
+                  <img class="footer-picture-instagram" src="assets/images/instagram-icon.svg" alt="Instagram">
+                </a>
+                <a class="linkedin-footer" href="https://www.linkedin.com/in/francesco-vitale-206765226/" target="_blank" rel="noopener noreferrer">
+                  <img class="footer-picture-linkedin" src="assets/images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+                <a class="github-footer" href="https://github.com/francescovitale-dev" target="_blank" rel="noopener noreferrer">
+                    <img class="footer-picture-git" src="assets/images/github-icon.svg" alt="GitHub">
+                </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

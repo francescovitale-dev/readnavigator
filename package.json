@@ -1,0 +1,20 @@
+{
+  "name": "readnavigator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite src",
+    "build": "vite build src",
+    "preview": "vite preview src"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "bootstrap": "^5.3.2",
+    "lodash": "^4.17.21",
+    "sweetalert2": "^11.10.3"
+  }
+}
