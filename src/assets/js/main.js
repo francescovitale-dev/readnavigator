@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/style.css";
 import "../style/footer.css";
 
-export default function mainContent() {
+function mainContent() {
   const itemsPerPage = 9;
 
   // Function to handle the search by genre
